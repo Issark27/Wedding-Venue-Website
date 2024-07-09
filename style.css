@@ -1,0 +1,385 @@
+.navbar-square {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(223, 216, 210, 0.85);
+  display: none;
+  z-index: 1;
+}
+
+#items {
+  margin-top: 200px;
+}
+
+.collapsed-menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150%;
+  background-color: rgba(255, 255, 255, 0.85);
+  display: none;
+  z-index: 98;
+  opacity: 0;
+  transform: translateY(10%);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.collapsed-menu.show {
+  display: none;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.collapsed-menu ul li {
+  list-style: none;
+}
+
+.collapsed-menu ul li a {
+  top: 350px;
+  color: black;
+  text-decoration: none;
+  font-size: 40px;
+  position: relative;
+  transition: color 0.4s ease-in-out;
+}
+
+.collapsed-menu ul li a:hover {
+  color: rgb(157, 157, 157);
+}
+
+#menu-icon {
+  z-index: 99;
+}
+
+.menu-icon {
+  cursor: pointer;
+  position: fixed;
+  top: 25px;
+  right: 5%;
+  z-index: 99;
+  user-select: none;
+}
+
+.menu-icon {
+  transition: transform 0.2s ease;
+}
+
+.menu-icon.rotate {
+  transform: rotate(360deg);
+}
+
+.menu-icon .material-symbols-outlined {
+  font-size: 30px;
+}
+
+.navbar-square.fixed-top {
+  z-index: 1;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+}
+
+.logo-container {
+  margin-left: 10px;
+}
+
+#LOGO {
+  transition: font-size 0.9s ease;
+  position: fixed;
+  top: 2.5%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#LOGO h1, #LOGO h2, #LOGO h3 {
+  transition: font-size 0.9s ease, margin-top 0.9s ease;
+  margin: 0;
+  letter-spacing: 2px;
+  display: block;
+  white-space: nowrap;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  right: 5%;
+  top: 25px;
+  background-color: transparent;
+  z-index: 3;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.nav ul li {
+  text-align: right;
+  margin-right: 75px; 
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  transition: color 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  opacity: 0;
+}
+
+.nav ul li a:hover {
+  color: white;
+  transition: 0.4s;
+}
+
+#Find {
+  position: fixed;
+  top: 25px;
+  left: 15%;
+  z-index: 3;
+  opacity: 0;
+  transition: 0.4s ease-out;
+}
+
+#Find a {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  transition: color 0.4s;
+}
+
+#Find a:hover {
+  color: white;
+  transition: 0.4s;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container-1 {
+  display: flex;
+  margin-bottom: 0px;
+}
+
+#review {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  height: 350px;
+  font-size: 25px;
+  background-color: rgb(223, 216, 210);
+}
+
+#header p {
+  margin: 5px;
+}
+
+.smaller-text {
+  font-size: 15px;
+}
+
+.star {
+  margin-top: 15px;
+  transition: color 0.5s ease;
+}
+
+#review:hover .star {
+  color: white;
+}
+
+#review-text-1 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+#review-text-1 p {
+  font-size: 15px;
+  margin: 30px;
+}
+
+.videos-container {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.rectangle {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  height: 125px;
+  background-color: rgb(223, 216, 210);
+  z-index: -1;
+}
+
+.video-size {
+  width: 350px;
+  height: auto;
+  border: 3px solid rgba(223, 216, 210, 0.8);
+  box-sizing: border-box;
+}
+
+.container-2 {
+  display: flex;
+  margin-top: -6px;
+}
+
+#review-text-2 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+#review-text-2 p {
+  font-size: 15px;
+  margin: 30px;
+}
+
+#photo1 {
+  position: relative;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10px;
+  background-color: rgb(223, 216, 210);
+  height: 100px;
+  transition: color 0.4s ease;
+}
+
+.title:hover {
+  color: white;
+}
+
+select {
+  transition: border-color 0.4s ease;
+}
+
+select:focus {
+  border-color: orange;
+}
+
+.option {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.option span {
+  flex: 1;
+}
+
+.option select, .option input[type="date"], .option input[type="radio"] {
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+
+input[type="submit"] {
+  margin: 5px;
+  background-color: rgb(251, 242, 234);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: color 0.5s ease;
+  transition: background-color 0.5s ease;
+  transition: box-shadow 0.5s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(223, 216, 210);
+  color: white;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+}
+
+@media screen and (max-width: 1100px) { 
+  .nav ul li a { 
+    display: none;
+  }
+
+  #Find { 
+    display: none;
+  }
+
+  .material-symbols-outlined { 
+    font-size: 24px;  
+  }
+
+  .menu-icon {
+    top: 25px;
+    right: 5%;
+    position: fixed;
+    display: block;
+    z-index: 5;
+  }
+
+}
+
+@media screen and (min-width: 1101px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .collapsed-menu {
+    display: none;
+    background-color: transparent;
+  }
+
+  #items {
+    display: none;
+  }
+
+}
+
+.prata-regular {
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.lora-regular {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
